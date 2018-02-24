@@ -62,6 +62,13 @@ app.get('/bad',(req,res)=>{
     });
 }); 
 
+//Project Page
+app.get('/project',(req,res)=>{
+    res.render('project.hbs',{
+        pageTitle : 'This page has my projects listing'
+    });
+});
+
 app.listen(port);
 
 //This is to test commit
